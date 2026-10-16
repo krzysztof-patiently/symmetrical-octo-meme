@@ -1,0 +1,20 @@
+[project]
+name = "rekrutacja"
+version = "0.1.0"
+description = "FastAPI service"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.143.0",
+    "sqlmodel>=0.0.48",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
